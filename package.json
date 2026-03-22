@@ -2,7 +2,8 @@
   "name": "example-com",
   "private": true,
   "scripts": {
-    "dev": "wrangler pages dev .",
-    "deploy": "wrangler pages deploy ."
+    "build": "python3 scripts/prepare_public_dir.py",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   }
 }

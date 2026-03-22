@@ -1,6 +1,6 @@
 # example.com
 
-Static Math Crossword site prepared for GitHub and Cloudflare Pages.
+Static Math Crossword site prepared for Cloudflare deployment from GitHub.
 
 ## Project structure
 
@@ -20,24 +20,22 @@ python3 scripts/generate_static_pages.py
 python3 scripts/generate_site_files.py
 ```
 
-## Cloudflare Pages
+Build the deployable static asset directory:
 
-- Framework preset: `None`
-- Build command: leave empty
-- Build output directory: `.`
-- Production branch: `main`
+```bash
+python3 scripts/prepare_public_dir.py
+```
+
+## Cloudflare Workers Builds
+
+- Build command: `python3 scripts/prepare_public_dir.py`
+- Deploy command: `npx wrangler deploy`
+- Path: `/`
 - Custom domain: `example.com`
 
-If you use a deploy command, use Pages deploy rather than Workers deploy:
+This repository targets the current GitHub-connected Workers flow. The build step prepares a `public/` directory, and Wrangler deploys it as static assets.
 
 ```bash
-npx wrangler pages deploy .
+python3 scripts/prepare_public_dir.py
+npx wrangler deploy
 ```
-
-or:
-
-```bash
-npm run deploy
-```
-
-Do not use `npx wrangler deploy` for this repository. That command targets Workers deployments and does not use `pages_build_output_dir`.

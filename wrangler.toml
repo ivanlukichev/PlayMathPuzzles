@@ -1,3 +1,7 @@
 name = "example-com"
 compatibility_date = "2026-03-22"
-pages_build_output_dir = "."
+
+[assets]
+directory = "./public"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
