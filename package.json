@@ -1,0 +1,8 @@
+{
+  "name": "example-com",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy ."
+  }
+}

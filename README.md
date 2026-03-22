@@ -23,7 +23,21 @@ python3 scripts/generate_site_files.py
 ## Cloudflare Pages
 
 - Framework preset: `None`
-- Build command: none
+- Build command: leave empty
 - Build output directory: `.`
 - Production branch: `main`
 - Custom domain: `example.com`
+
+If you use a deploy command, use Pages deploy rather than Workers deploy:
+
+```bash
+npx wrangler pages deploy .
+```
+
+or:
+
+```bash
+npm run deploy
+```
+
+Do not use `npx wrangler deploy` for this repository. That command targets Workers deployments and does not use `pages_build_output_dir`.
