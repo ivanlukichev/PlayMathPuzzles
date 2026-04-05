@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Play Math Crossword – Rules, Tips, and Strategy</title>
+    <meta name="description" content="Learn how to play math crossword puzzles online. Read the rules, understand the grid, and pick up beginner tips for solving number crosswords." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38FFB5J2HT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-38FFB5J2HT');
+    </script>
+    <meta name="theme-color" content="#1f88dd" />
+    <link rel="canonical" href="https://example.com/how-to-play-math-crossword/" />
+    <link rel="preload" href="/data/puzzles.json" as="fetch" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body data-page-mode="home" data-default-size="5" data-default-difficulty="medium">
+    <main class="page-shell">
+      <header class="page-topbar">
+        <a class="site-logo" href="/" aria-label="Math Crossword home">
+          <span class="site-logo-mark">MC</span>
+          <span class="site-logo-copy">
+            <span class="site-logo-title">Math Crossword</span>
+            <span class="site-logo-subtitle">Puzzle Library</span>
+          </span>
+        </a>
+        <nav class="size-tabs" aria-label="Puzzle sizes">
+          <a class="size-tab" href="/5x5-math-crossword/" data-size="5">5x5</a>
+          <a class="size-tab" href="/7x7-math-crossword/" data-size="7">7x7</a>
+          <a class="size-tab" href="/9x9-math-crossword/" data-size="9">9x9</a>
+          <a class="size-tab" href="/11x11-math-crossword/" data-size="11">11x11</a>
+          <a class="size-tab size-tab--aux" href="/articles/">Articles</a>
+        </nav>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">How To Play</p>
+          <h1 id="page-heading">How to Play Math Crossword</h1>
+          <p id="page-subtitle" class="subtitle">
+            Learn the rules, understand the grid, and build a solving routine that works on every size and difficulty level.
+          </p>
+          <div class="meta-strip hero-meta-strip">
+            <div class="meta-card">
+              <span class="meta-label">Size</span>
+              <strong id="size-value">5x5</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Timer</span>
+              <strong id="timer">00:00</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Difficulty</span>
+              <strong id="collection-value">Medium</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-panel">
+          <div class="panel-top">
+            <div
+              class="difficulty-switch"
+              role="group"
+              aria-label="Select puzzle difficulty"
+            >
+              <button type="button" data-difficulty="easy">Easy</button>
+              <button type="button" data-difficulty="medium">Medium</button>
+              <button type="button" data-difficulty="hard">Hard</button>
+            </div>
+          </div>
+
+          <div class="board-frame">
+            <div
+              id="board"
+              class="board"
+              aria-label="Math crossword board"
+              role="grid"
+            ></div>
+          </div>
+
+          <p id="status" class="status-line" aria-live="polite"></p>
+
+          <section class="tray-panel" aria-labelledby="tray-heading">
+            <div class="tray-heading-row">
+              <h2 id="tray-heading">Numbers Tray</h2>
+            </div>
+            <div id="tray" class="tray" aria-label="Available values"></div>
+          </section>
+
+          <div class="controls">
+            <button type="button" id="reset-button">Reset</button>
+            <button type="button" id="hint-button">Hint</button>
+            <button type="button" id="check-button">Check</button>
+            <button type="button" id="new-puzzle-button" class="accent-button">
+              New Puzzle
+            </button>
+          </div>
+
+          <div class="tool-actions">
+            <button type="button" id="print-button" class="ghost-button">
+              Print Puzzle
+            </button>
+            <button type="button" id="copy-link-button" class="ghost-button">
+              Copy Link
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seo-stack" aria-label="Page content">
+        <section class="seo-card">
+          <h2>What Is a Math Crossword?</h2>
+          <p>A math crossword is a crossword-style puzzle made from arithmetic instead of words. Some cells already show operators or fixed numbers, while other cells are blank and need to be filled with the correct values.</p>
+<p>Each horizontal and vertical line must form a valid equation. Because the equations cross, every number you place affects more than one part of the puzzle.</p>
+        </section>
+<section class="seo-card">
+          <h2>Basic Rules</h2>
+          <ul class="seo-list">
+<li>Only fill the white number cells.</li>
+<li>Operators and equals signs are fixed and cannot be changed.</li>
+<li>Every row and column equation must be mathematically correct.</li>
+<li>The tray shows which values are available for the puzzle.</li>
+<li>A completed puzzle must satisfy the whole grid, not just one line.</li>
+</ul>
+<p>The key idea is to solve with both arithmetic and cross-checking. A number that works in one line still has to fit every crossing equation that touches it.</p>
+        </section>
+<section class="seo-card">
+          <h2>How to Fill the Grid</h2>
+          <p>You can play in two ways. Tap a value in the tray and then choose a cell, or tap a cell first and then choose the value you want to place. The game supports both flows so you can solve in the order that feels most natural.</p>
+<p>When both a cell and a value are selected, the number is placed automatically. The selected tray value stays active, which makes it easier to place the same number again if the puzzle needs duplicates.</p>
+<ul class="seo-list">
+<li>Tap an already selected filled cell again to clear it.</li>
+<li>Use Reset if you want to restart the whole board.</li>
+<li>Use Hint when you want one correct value revealed.</li>
+<li>Use Check to confirm whether the full solution is correct.</li>
+</ul>
+        </section>
+<section class="seo-card">
+          <h2>How Difficulty Works</h2>
+          <p>Difficulty changes the feel of the solve more than the rules. Easy puzzles use simpler numbers and more givens, so the board opens quickly. Medium is a balanced mode with enough structure to get started but enough resistance to stay interesting.</p>
+<p>Hard reduces help. You may get very few givens, repeated values in the tray matter more, and the solve depends more heavily on clean deduction rather than quick arithmetic alone.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/math-crossword-easy/">
+              <strong>Easy</strong>
+              <span>Gentle starts with simpler numbers and more givens.</span>
+            </a>
+<a class="seo-link-card" href="/math-crossword-medium/">
+              <strong>Medium</strong>
+              <span>A balanced level with a mix of arithmetic and logic.</span>
+            </a>
+<a class="seo-link-card" href="/math-crossword-hard/">
+              <strong>Hard</strong>
+              <span>Fewer givens, tighter logic, and tougher deductions.</span>
+            </a>
+</div>
+        </section>
+<section class="seo-card">
+          <h2>Tips for Beginners</h2>
+          <ul class="seo-list">
+<li>Start with 5x5 or 7x7 puzzles.</li>
+<li>Use Easy mode first so you can learn the pattern of crossings.</li>
+<li>Look for completed results and strong givens before scanning the whole board.</li>
+<li>Watch the tray counts because they tell you which numbers are still possible.</li>
+<li>If one area gets stuck, move to a crossing line and return later.</li>
+</ul>
+<p>Beginners often improve quickly once they stop trying to solve one line in isolation. The puzzle becomes easier when you let the crossings do part of the work.</p>
+        </section>
+<section class="seo-card">
+          <h2>Common Mistakes</h2>
+          <ul class="seo-list">
+<li>Forcing a number because it fits one equation but ignoring the crossing.</li>
+<li>Using up a tray value mentally without checking how many copies remain.</li>
+<li>Staying on one stubborn area for too long instead of rotating to another cluster.</li>
+<li>Jumping into Hard too early and treating confusion as a strategy problem instead of a difficulty mismatch.</li>
+</ul>
+<p>The best habit is simple: place only what the board supports, then let each confirmed number create the next opening.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/5x5-math-crossword/">
+              <strong>5x5</strong>
+              <span>Fast, beginner-friendly puzzles for quick sessions.</span>
+            </a>
+<a class="seo-link-card" href="/7x7-math-crossword/">
+              <strong>7x7</strong>
+              <span>A balanced format with more crossings and more logic.</span>
+            </a>
+<a class="seo-link-card" href="/9x9-math-crossword/">
+              <strong>9x9</strong>
+              <span>Longer chains and deeper solving for experienced players.</span>
+            </a>
+<a class="seo-link-card" href="/11x11-math-crossword/">
+              <strong>11x11</strong>
+              <span>The largest grid for focused, expert-style play.</span>
+            </a>
+<a class="seo-link-card" href="/how-to-play-math-crossword/">
+              <strong>How to Play</strong>
+              <span>Learn the rules, controls, and beginner strategy.</span>
+            </a>
+<a class="seo-link-card" href="/printable-math-crossword/">
+              <strong>Printable Puzzles</strong>
+              <span>Print puzzles, share links, and continue online with QR.</span>
+            </a>
+<a class="seo-link-card" href="/articles/">
+              <strong>Articles</strong>
+              <span>Read guides on brain training, printable use, kids, and classroom play.</span>
+            </a>
+</div>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/articles/choosing-the-right-math-crossword-size/">
+              <strong>Choosing the Right Size</strong>
+              <span>Match board size to your attention span and experience.</span>
+            </a>
+<a class="seo-link-card" href="/articles/math-crossword-for-kids/">
+              <strong>Math Crossword for Kids</strong>
+              <span>See the best beginner path for younger players.</span>
+            </a>
+</div>
+        </section>
+<section class="seo-card">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-grid">
+<article class="faq-item">
+              <h3>How do I start a math crossword?</h3>
+              <p>Choose a smaller board, stay on Easy or Medium, and begin with rows or columns that already show a result or a given number.</p>
+            </article>
+<article class="faq-item">
+              <h3>Do I have to solve rows before columns?</h3>
+              <p>No. You can solve in any order as long as every crossing remains valid.</p>
+            </article>
+<article class="faq-item">
+              <h3>What does the tray do?</h3>
+              <p>The tray shows which values are available and how many copies are still unused.</p>
+            </article>
+<article class="faq-item">
+              <h3>When should I use Hint?</h3>
+              <p>Hint is best when you understand the rules but need one solid number to reopen the board.</p>
+            </article>
+<article class="faq-item">
+              <h3>Is there a printable version?</h3>
+              <p>Yes. Every puzzle has a print page and a QR code back to the online version.</p>
+            </article>
+</div>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <nav class="site-footer__nav" aria-label="Footer">
+            <a href="/articles/">Articles</a>
+          </nav>
+          <span class="site-footer__credit">
+            by <a href="https://lukichev.biz/" rel="me">lukichev.biz</a>
+          </span>
+        </div>
+      </footer>
+    </main>
+
+    <div id="completion-popup" class="completion-overlay" hidden>
+      <div
+        class="completion-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="completion-title"
+      >
+        <p class="eyebrow">Completed</p>
+        <h2 id="completion-title">Puzzle solved</h2>
+        <p id="completion-summary" class="completion-summary"></p>
+        <div class="completion-actions">
+          <button type="button" id="popup-next-button" class="accent-button">
+            Next Puzzle
+          </button>
+          <button type="button" id="popup-print-button">
+            Print
+          </button>
+          <button type="button" id="popup-copy-link-button">
+            Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

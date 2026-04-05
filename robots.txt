@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /print/
+Disallow: /tmp/
+Disallow: /draft/
+Disallow: /debug/
+Disallow: /experimental/
+
+Sitemap: https://example.com/sitemap.xml

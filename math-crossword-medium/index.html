@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Math Crossword Puzzles – Play Online</title>
+    <meta name="description" content="Play medium math crossword puzzles online. Enjoy balanced number logic games with steady deduction and satisfying arithmetic challenge." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38FFB5J2HT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-38FFB5J2HT');
+    </script>
+    <meta name="theme-color" content="#1f88dd" />
+    <link rel="canonical" href="https://example.com/math-crossword-medium/" />
+    <link rel="preload" href="/data/puzzles.json" as="fetch" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body data-page-mode="home" data-default-size="7" data-default-difficulty="medium">
+    <main class="page-shell">
+      <header class="page-topbar">
+        <a class="site-logo" href="/" aria-label="Math Crossword home">
+          <span class="site-logo-mark">MC</span>
+          <span class="site-logo-copy">
+            <span class="site-logo-title">Math Crossword</span>
+            <span class="site-logo-subtitle">Puzzle Library</span>
+          </span>
+        </a>
+        <nav class="size-tabs" aria-label="Puzzle sizes">
+          <a class="size-tab" href="/5x5-math-crossword/" data-size="5">5x5</a>
+          <a class="size-tab" href="/7x7-math-crossword/" data-size="7">7x7</a>
+          <a class="size-tab" href="/9x9-math-crossword/" data-size="9">9x9</a>
+          <a class="size-tab" href="/11x11-math-crossword/" data-size="11">11x11</a>
+          <a class="size-tab size-tab--aux" href="/articles/">Articles</a>
+        </nav>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Difficulty Guide</p>
+          <h1 id="page-heading">Medium Math Crossword Puzzles</h1>
+          <p id="page-subtitle" class="subtitle">
+            Balanced puzzles for regular play, with enough givens to get started and enough resistance to keep the solve interesting.
+          </p>
+          <div class="meta-strip hero-meta-strip">
+            <div class="meta-card">
+              <span class="meta-label">Size</span>
+              <strong id="size-value">7x7</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Timer</span>
+              <strong id="timer">00:00</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Difficulty</span>
+              <strong id="collection-value">Medium</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-panel">
+          <div class="panel-top">
+            <div
+              class="difficulty-switch"
+              role="group"
+              aria-label="Select puzzle difficulty"
+            >
+              <button type="button" data-difficulty="easy">Easy</button>
+              <button type="button" data-difficulty="medium">Medium</button>
+              <button type="button" data-difficulty="hard">Hard</button>
+            </div>
+          </div>
+
+          <div class="board-frame">
+            <div
+              id="board"
+              class="board"
+              aria-label="Math crossword board"
+              role="grid"
+            ></div>
+          </div>
+
+          <p id="status" class="status-line" aria-live="polite"></p>
+
+          <section class="tray-panel" aria-labelledby="tray-heading">
+            <div class="tray-heading-row">
+              <h2 id="tray-heading">Numbers Tray</h2>
+            </div>
+            <div id="tray" class="tray" aria-label="Available values"></div>
+          </section>
+
+          <div class="controls">
+            <button type="button" id="reset-button">Reset</button>
+            <button type="button" id="hint-button">Hint</button>
+            <button type="button" id="check-button">Check</button>
+            <button type="button" id="new-puzzle-button" class="accent-button">
+              New Puzzle
+            </button>
+          </div>
+
+          <div class="tool-actions">
+            <button type="button" id="print-button" class="ghost-button">
+              Print Puzzle
+            </button>
+            <button type="button" id="copy-link-button" class="ghost-button">
+              Copy Link
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seo-stack" aria-label="Page content">
+        <section class="seo-card">
+          <h2>What Makes This Difficulty Level Different?</h2>
+          <p>Medium is the center of the library. It mixes arithmetic and deduction in a way that feels fair but not automatic, so you still have to read crossings carefully and manage the tray well.</p>
+<p>You usually get a few strong openings, but the board will not solve itself. Medium asks you to think through the interactions and build the answer step by step.</p>
+        </section>
+<section class="seo-card">
+          <h2>Who Should Choose This Level?</h2>
+          <p>Medium is ideal for most players. If you understand the rules and want a satisfying puzzle without the heavier pressure of Hard, this is usually the right choice.</p>
+<p>It is especially good for regular practice because it stays engaging across every board size.</p>
+        </section>
+<section class="seo-card">
+          <h2>Recommended Puzzle Sizes</h2>
+          <p>Medium plays well across the whole site, but 7x7 and 9x9 are especially strong because they combine balanced givens with rich crossing logic.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/7x7-math-crossword/">
+              <strong>7x7</strong>
+              <span>A balanced format with more crossings and more logic.</span>
+            </a>
+<a class="seo-link-card" href="/9x9-math-crossword/">
+              <strong>9x9</strong>
+              <span>Longer chains and deeper solving for experienced players.</span>
+            </a>
+<a class="seo-link-card" href="/11x11-math-crossword/">
+              <strong>11x11</strong>
+              <span>The largest grid for focused, expert-style play.</span>
+            </a>
+</div>
+        </section>
+<section class="seo-card">
+          <h2>Play More Math Crossword Levels</h2>
+          <p>Stay on Medium when you want consistent challenge, drop to Easy for a faster solve, or move up to Hard for fewer givens and tighter deductions.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/math-crossword-easy/">
+              <strong>Easy</strong>
+              <span>Gentle starts with simpler numbers and more givens.</span>
+            </a>
+<a class="seo-link-card" href="/math-crossword-hard/">
+              <strong>Hard</strong>
+              <span>Fewer givens, tighter logic, and tougher deductions.</span>
+            </a>
+</div>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/how-to-play-math-crossword/">
+              <strong>How to Play</strong>
+              <span>Learn the rules, controls, and beginner strategy.</span>
+            </a>
+<a class="seo-link-card" href="/printable-math-crossword/">
+              <strong>Printable Puzzles</strong>
+              <span>Print puzzles, share links, and continue online with QR.</span>
+            </a>
+<a class="seo-link-card" href="/articles/">
+              <strong>Articles</strong>
+              <span>Read guides on brain training, printable use, kids, and classroom play.</span>
+            </a>
+<a class="seo-link-card" href="/">
+              <strong>Home</strong>
+              <span>Return to the main math crossword hub.</span>
+            </a>
+</div>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/articles/choosing-the-right-math-crossword-size/">
+              <strong>Choosing the Right Size</strong>
+              <span>Pick the board size that feels best for steady daily play.</span>
+            </a>
+<a class="seo-link-card" href="/articles/how-math-crosswords-build-number-sense/">
+              <strong>Number Sense</strong>
+              <span>Medium puzzles are a strong place to build arithmetic intuition.</span>
+            </a>
+</div>
+        </section>
+<section class="seo-card">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-grid">
+<article class="faq-item">
+              <h3>Is Medium the default level?</h3>
+              <p>Yes. Medium is the best all-purpose starting level for most returning players.</p>
+            </article>
+<article class="faq-item">
+              <h3>Which size works best on Medium?</h3>
+              <p>Many players like 7x7 and 9x9 because they combine readable boards with stronger logic chains.</p>
+            </article>
+</div>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <nav class="site-footer__nav" aria-label="Footer">
+            <a href="/articles/">Articles</a>
+          </nav>
+          <span class="site-footer__credit">
+            by <a href="https://lukichev.biz/" rel="me">lukichev.biz</a>
+          </span>
+        </div>
+      </footer>
+    </main>
+
+    <div id="completion-popup" class="completion-overlay" hidden>
+      <div
+        class="completion-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="completion-title"
+      >
+        <p class="eyebrow">Completed</p>
+        <h2 id="completion-title">Puzzle solved</h2>
+        <p id="completion-summary" class="completion-summary"></p>
+        <div class="completion-actions">
+          <button type="button" id="popup-next-button" class="accent-button">
+            Next Puzzle
+          </button>
+          <button type="button" id="popup-print-button">
+            Print
+          </button>
+          <button type="button" id="popup-copy-link-button">
+            Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

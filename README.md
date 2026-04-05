@@ -1,33 +1,45 @@
 # PlayMathPuzzles
 
-PlayMathPuzzles is an interactive collection of math puzzles designed to train logic, thinking, and problem-solving skills.
-
-🌐 Website  
-https://playmathpuzzles.com/
+PlayMathPuzzles is an interactive collection of browser-based math puzzles designed to train logic, thinking, and problem-solving skills.
 
 ## About
 
-The project focuses on simple, browser-based puzzles that are easy to start but require attention and logical thinking to solve.
+- Lightweight math crossword gameplay in the browser
+- Puzzle dataset and static pages generated ahead of deployment
+- Prepared for Cloudflare GitHub-connected Workers deployment
 
-It is part of a broader set of web experiments and puzzle-related products, including PuzzleFree and other small tools.
+## Project structure
 
-## Features
+- `index.html` and section folders contain the published static pages
+- `src/` contains the browser-side game logic
+- `data/puzzles.json` contains the puzzle dataset
+- `scripts/` regenerates SEO pages, articles, puzzle pages, and deploy assets
 
-- Interactive math puzzles
-- Focus on logic and problem solving
-- Lightweight and accessible in the browser
-- Designed for both learning and entertainment
+## Local maintenance
 
-## Position in the ecosystem
+Regenerate site content with Python 3:
 
-PlayMathPuzzles explores the intersection of:
-- puzzles
-- education
-- mental training
+```bash
+python3 scripts/generate_articles.py
+python3 scripts/generate_seo_pages.py
+python3 scripts/generate_static_pages.py
+python3 scripts/generate_site_files.py
+```
 
-It complements other projects such as:
-- PuzzleFree (jigsaw puzzles)
-- CalcSprint (mental math training)
+Prepare the deployable static asset directory:
+
+```bash
+python3 scripts/prepare_public_dir.py
+```
+
+## Cloudflare
+
+- Build command: `python3 scripts/prepare_public_dir.py`
+- Deploy command: `npx wrangler deploy`
+- Path: `/`
+- Current target domain: `example.com`
+
+This repository targets the current GitHub-connected Workers flow. The build step prepares a `public/` directory, and Wrangler deploys it as static assets.
 
 ## Author
 

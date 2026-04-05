@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Crossword Puzzles Online – Play Free Number Logic Games</title>
+    <meta name="description" content="Play math crossword puzzles online. Solve number-based logic games in different sizes and difficulty levels. Free and printable." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38FFB5J2HT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-38FFB5J2HT');
+    </script>
+    <meta name="theme-color" content="#1f88dd" />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="preload" href="/data/puzzles.json" as="fetch" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body data-page-mode="home">
+    <main class="page-shell">
+      <header class="page-topbar">
+        <a class="site-logo" href="/" aria-label="Math Crossword home">
+          <span class="site-logo-mark">MC</span>
+          <span class="site-logo-copy">
+            <span class="site-logo-title">Math Crossword</span>
+            <span class="site-logo-subtitle">Puzzle Library</span>
+          </span>
+        </a>
+        <nav class="size-tabs" aria-label="Puzzle sizes">
+          <a class="size-tab" href="/5x5-math-crossword/" data-size="5">5x5</a>
+          <a class="size-tab" href="/7x7-math-crossword/" data-size="7">7x7</a>
+          <a class="size-tab" href="/9x9-math-crossword/" data-size="9">9x9</a>
+          <a class="size-tab" href="/11x11-math-crossword/" data-size="11">11x11</a>
+          <a class="size-tab size-tab--aux" href="/articles/">Articles</a>
+        </nav>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Main Puzzle Hub</p>
+          <h1 id="page-heading">Math Crossword</h1>
+          <p id="page-subtitle" class="subtitle">
+            Play free number-based crossword puzzles online in multiple sizes, switch difficulty any time, and keep solving with printable and shareable puzzle links.
+          </p>
+          <div class="meta-strip hero-meta-strip">
+            <div class="meta-card">
+              <span class="meta-label">Size</span>
+              <strong id="size-value">5x5</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Timer</span>
+              <strong id="timer">00:00</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Difficulty</span>
+              <strong id="collection-value">Medium</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-panel">
+          <div class="panel-top">
+            <div
+              class="difficulty-switch"
+              role="group"
+              aria-label="Select puzzle difficulty"
+            >
+              <button type="button" data-difficulty="easy">Easy</button>
+              <button type="button" data-difficulty="medium">Medium</button>
+              <button type="button" data-difficulty="hard">Hard</button>
+            </div>
+          </div>
+
+          <div class="board-frame">
+            <div
+              id="board"
+              class="board"
+              aria-label="Math crossword board"
+              role="grid"
+            ></div>
+          </div>
+
+          <p id="status" class="status-line" aria-live="polite"></p>
+
+          <section class="tray-panel" aria-labelledby="tray-heading">
+            <div class="tray-heading-row">
+              <h2 id="tray-heading">Numbers Tray</h2>
+            </div>
+            <div id="tray" class="tray" aria-label="Available values"></div>
+          </section>
+
+          <div class="controls">
+            <button type="button" id="reset-button">Reset</button>
+            <button type="button" id="hint-button">Hint</button>
+            <button type="button" id="check-button">Check</button>
+            <button type="button" id="new-puzzle-button" class="accent-button">
+              New Puzzle
+            </button>
+          </div>
+
+          <div class="tool-actions">
+            <button type="button" id="print-button" class="ghost-button">
+              Print Puzzle
+            </button>
+            <button type="button" id="copy-link-button" class="ghost-button">
+              Copy Link
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seo-stack" aria-label="Page content">
+        <section class="seo-card">
+          <h2>What Is a Math Crossword Puzzle?</h2>
+          <p>A math crossword puzzle is a number puzzle where arithmetic takes the place of words. Instead of filling letters into clues, you place missing numbers so that every horizontal and vertical equation is valid.</p>
+<p>The format feels familiar if you enjoy classic crosswords, but the thinking is different. You watch how one answer affects another, use the tray to track which numbers are still available, and solve the grid through logic, arithmetic, and pattern recognition.</p>
+<p>That mix makes math crosswords useful for both fun and practice. They build confidence with basic operations, reward careful reasoning, and stay approachable because every move gives you more information.</p>
+        </section>
+<section class="seo-card">
+          <h2>How to Play Math Crossword Online</h2>
+          <p>Start by choosing a number from the tray or by tapping an empty cell in the grid. The game supports both directions, so you can think in the order that feels natural.</p>
+<ul class="seo-list">
+<li>Pick a value and place it into a white cell, or pick the cell first and then choose the value.</li>
+<li>Use the givens, operators, and equals signs to test what can fit.</li>
+<li>Tap Hint if you want one correct value revealed.</li>
+<li>Use Check when you want to see whether the puzzle is solved correctly.</li>
+<li>Hit New Puzzle to load another crossword in the same category.</li>
+</ul>
+<p>Because every puzzle lives in a fixed library, you can also copy a link, open a direct puzzle URL, or print a version of the same grid for paper solving.</p>
+        </section>
+<section class="seo-card">
+          <h2>Choose Your Puzzle Size</h2>
+          <p>Different grid sizes create different solving rhythms. Smaller boards are quick and friendly, while larger boards ask for longer chains of reasoning and more sustained attention.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/5x5-math-crossword/">
+              <strong>5x5</strong>
+              <span>Fast, beginner-friendly puzzles for quick sessions.</span>
+            </a>
+<a class="seo-link-card" href="/7x7-math-crossword/">
+              <strong>7x7</strong>
+              <span>A balanced format with more crossings and more logic.</span>
+            </a>
+<a class="seo-link-card" href="/9x9-math-crossword/">
+              <strong>9x9</strong>
+              <span>Longer chains and deeper solving for experienced players.</span>
+            </a>
+<a class="seo-link-card" href="/11x11-math-crossword/">
+              <strong>11x11</strong>
+              <span>The largest grid for focused, expert-style play.</span>
+            </a>
+</div>
+<p>If you are new to the format, start with 5x5 or 7x7. If you want a deeper logic workout, move up to 9x9 or 11x11 and let the extra crossings guide the solve.</p>
+        </section>
+<section class="seo-card">
+          <h2>Difficulty Levels</h2>
+          <p>Each size supports three clear difficulty levels. Easy uses simpler numbers and more givens. Medium is the balanced everyday mode. Hard reduces help and asks you to lean more on deduction.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/math-crossword-easy/">
+              <strong>Easy</strong>
+              <span>Gentle starts with simpler numbers and more givens.</span>
+            </a>
+<a class="seo-link-card" href="/math-crossword-medium/">
+              <strong>Medium</strong>
+              <span>A balanced level with a mix of arithmetic and logic.</span>
+            </a>
+<a class="seo-link-card" href="/math-crossword-hard/">
+              <strong>Hard</strong>
+              <span>Fewer givens, tighter logic, and tougher deductions.</span>
+            </a>
+</div>
+<p>That means you can choose whether you want a fast warm-up, a relaxed practice session, or a more demanding puzzle that unfolds step by step.</p>
+        </section>
+<section class="seo-card">
+          <h2>Why Play Math Crossword Puzzles?</h2>
+          <ul class="seo-list">
+<li>They train logical thinking without feeling like a worksheet.</li>
+<li>They give you regular arithmetic practice in a puzzle format.</li>
+<li>They are easy to start and satisfying to finish.</li>
+<li>They work well for children, adults, students, and casual brain-training fans.</li>
+<li>They fit short breaks as well as longer focused sessions.</li>
+</ul>
+<p>Many players enjoy the calm rhythm of solving. You test a number, read the crossings, rule out weak options, and gradually watch the grid become more certain.</p>
+        </section>
+<section class="seo-card">
+          <h2>Printable and Shareable Puzzles</h2>
+          <p>Every puzzle can be opened online, shared with a direct link, and printed in a clean paper-friendly format. Printable pages include a QR code, which makes it easy to return from paper back to the matching online puzzle.</p>
+<p>That is useful if you want to solve on paper at home, use a puzzle in class, send a challenge to a friend, or move between devices without losing the exact puzzle you picked.</p>
+<div class="seo-link-grid">
+<a class="seo-link-card" href="/how-to-play-math-crossword/">
+              <strong>How to Play</strong>
+              <span>Learn the rules, controls, and beginner strategy.</span>
+            </a>
+<a class="seo-link-card" href="/printable-math-crossword/">
+              <strong>Printable Puzzles</strong>
+              <span>Print puzzles, share links, and continue online with QR.</span>
+            </a>
+<a class="seo-link-card" href="/articles/">
+              <strong>Articles</strong>
+              <span>Read guides on brain training, printable use, kids, and classroom play.</span>
+            </a>
+</div>
+        </section>
+<section class="seo-card">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-grid">
+<article class="faq-item">
+              <h3>What is a math crossword puzzle?</h3>
+              <p>It is a crossword-style logic puzzle where you fill missing numbers so that every row and column equation is mathematically correct.</p>
+            </article>
+<article class="faq-item">
+              <h3>Can I play math crosswords for free?</h3>
+              <p>Yes. The site is built around a fixed free library of playable puzzles.</p>
+            </article>
+<article class="faq-item">
+              <h3>Are there different difficulty levels?</h3>
+              <p>Yes. Every playable size supports Easy, Medium, and Hard modes.</p>
+            </article>
+<article class="faq-item">
+              <h3>Can I print puzzles?</h3>
+              <p>Yes. Every puzzle has a print-friendly page, and the print version includes a QR code back to the online puzzle.</p>
+            </article>
+<article class="faq-item">
+              <h3>Which puzzle size should I start with?</h3>
+              <p>Most new players do best with 5x5 or 7x7 before moving into 9x9 and 11x11.</p>
+            </article>
+</div>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <nav class="site-footer__nav" aria-label="Footer">
+            <a href="/articles/">Articles</a>
+          </nav>
+          <span class="site-footer__credit">
+            by <a href="https://lukichev.biz/" rel="me">lukichev.biz</a>
+          </span>
+        </div>
+      </footer>
+    </main>
+
+    <div id="completion-popup" class="completion-overlay" hidden>
+      <div
+        class="completion-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="completion-title"
+      >
+        <p class="eyebrow">Completed</p>
+        <h2 id="completion-title">Puzzle solved</h2>
+        <p id="completion-summary" class="completion-summary"></p>
+        <div class="completion-actions">
+          <button type="button" id="popup-next-button" class="accent-button">
+            Next Puzzle
+          </button>
+          <button type="button" id="popup-print-button">
+            Print
+          </button>
+          <button type="button" id="popup-copy-link-button">
+            Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
