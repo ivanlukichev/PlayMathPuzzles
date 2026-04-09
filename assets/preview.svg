@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="PlayMathPuzzles preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7e8"/>
+      <stop offset="100%" stop-color="#f8efe0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="110" r="160" fill="#ff9d5c" opacity="0.18"/>
+  <circle cx="170" cy="520" r="210" fill="#2aa79b" opacity="0.12"/>
+  <rect x="84" y="86" width="1032" height="458" rx="36" fill="#fffdf8" stroke="#e6d1b6" stroke-width="2"/>
+  <text x="120" y="160" fill="#d46b2f" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2">MATH CROSSWORD PUZZLES</text>
+  <text x="120" y="252" fill="#1f2a37" font-family="Arial, sans-serif" font-size="68" font-weight="700">PlayMathPuzzles</text>
+  <text x="120" y="310" fill="#556270" font-family="Arial, sans-serif" font-size="28">Logic-driven number crosswords in clean browser layouts.</text>
+  <g transform="translate(742 148)">
+    <rect width="288" height="288" rx="28" fill="#fff8ee" stroke="#e8c9a6"/>
+    <g stroke="#d9b58d" stroke-width="3">
+      <line x1="0" y1="72" x2="288" y2="72"/>
+      <line x1="0" y1="144" x2="288" y2="144"/>
+      <line x1="0" y1="216" x2="288" y2="216"/>
+      <line x1="72" y1="0" x2="72" y2="288"/>
+      <line x1="144" y1="0" x2="144" y2="288"/>
+      <line x1="216" y1="0" x2="216" y2="288"/>
+    </g>
+    <g fill="#223042" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">
+      <text x="36" y="46">7</text>
+      <text x="108" y="118">9</text>
+      <text x="180" y="190">11</text>
+      <text x="252" y="262">13</text>
+    </g>
+  </g>
+  <rect x="120" y="368" width="170" height="52" rx="26" fill="#2aa79b"/>
+  <text x="205" y="402" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Play now</text>
+  <rect x="308" y="368" width="220" height="52" rx="26" fill="#fff4e7" stroke="#d8b998"/>
+  <text x="418" y="402" text-anchor="middle" fill="#223042" font-family="Arial, sans-serif" font-size="24" font-weight="700">7x7 to 11x11</text>
+  <text x="120" y="492" fill="#8b735b" font-family="Arial, sans-serif" font-size="22">Live at playmathpuzzles.com</text>
+</svg>
